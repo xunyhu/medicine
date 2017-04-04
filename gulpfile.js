@@ -15,7 +15,7 @@ gulp.task('sass',function(){
 gulp.task('server',function(){
 	browser({
 		proxy : 'http://localhost/medicine/',
-		files : ['./src/**/*.html','./src/css/*css']
+		files : ['./src/**/*.html','./src/css/*css','./src/js/*js']
 	});
 	gulp.watch('./src/sass/*.scss',['sass']);
 })

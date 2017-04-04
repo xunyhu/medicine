@@ -1,3 +1,39 @@
+// 底部样式
+.wrapbrand{
+	width:100%;height:180px;background:#f0f0f0;margin-top:60px;
+	.brand{
+		width:1190px;margin:0 auto;height:180px;
+        background: url(../images/icon_gonggaob.png) no-repeat 0;
+        a { display: inline-block; height: 118px; width: 297px; }
+	}
+}
+.client{
+	width:1190px;margin:0 auto;margin-top:35px;height:143px;
+	div {
+		width: 343px;
+	    height: 108px;
+	    background: #f0f0f0;
+	    padding: 20px 0 20px 40px;
+	    float: left;
+	    margin-left:20px;
+	    dt {width:110px;height:110px;background:url(img/ewm-1.jpg) no-repeat;float:left}
+	    dd {float:left;padding:8px 0 0 15px;}
+	    h3 {font-size: 16px; font-weight: bold; color: #C7A774;}
+	}
+	div:first-child {margin:0;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 #wrap-foot { height: 200px; width: 100%; }
 
 #wrap-foot .foot {width: 1190px;margin: 0 auto;}

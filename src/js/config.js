@@ -6,7 +6,11 @@ requirejs.config({
 		'jquery' : '../lib/jquery-3.1.1',
 		'temp' : '../lib/template-debug',
 		'index' : 'index',
-		'top' : 'top'
+		'top' : 'top',
+		'carousel' : '../lib/jquery-carousel/jquery-carousel'
+	},
+	shim : {
+		'carousel' : ['jquery']
 	}
 });
 

@@ -1,71 +1,26 @@
 @charset "UTF-8";
-body {
-  color: #5e5e5e;
-  font: 12px/150% Arial,Verdana,"宋体";
-  margin: 0;
-  padding: 0; }
+body { color: #5e5e5e; font: 12px/150% Arial,Verdana,"宋体"; margin: 0; padding: 0; }
 
-body {
-  min-width: 1190px; }
+body { min-width: 1190px; }
 
-h1, h2, h3, h4, h5, h6, p, a, em, font, img, strong, b, dl, dt, dd, form, label, ol, ul, li, legend, span, input {
-  margin: 0;
-  padding: 0; }
+h1, h2, h3, h4, h5, h6, p, a, em, font, img, strong, b, dl, dt, dd, form, label, ol, ul, li, legend, span, input { margin: 0; padding: 0; }
 
-ol, ul {
-  list-style: none; }
+ol, ul { list-style: none; }
 
-img {
-  border: 0; }
+img { border: 0; }
 
-.fl {
-  float: left; }
+.fl { float: left; }
 
-.fr {
-  float: right; }
+.fr { float: right; }
 
-.clr {
-  clear: both;
-  display: block;
-  font-size: 0;
-  height: 0;
-  line-height: 0;
-  overflow: hidden;
-  padding: 0px;
-  margin: 0px; }
+.clr { clear: both; display: block; font-size: 0; height: 0; line-height: 0; overflow: hidden; padding: 0px; margin: 0px; }
 
-.clear {
-  clear: both;
-  padding: 0px;
-  font-size: 0px;
-  margin: 0px;
-  height: 0px;
-  line-height: 0;
-  overflow: hidden;
-  display: block; }
+.clear { clear: both; padding: 0px; font-size: 0px; margin: 0px; height: 0px; line-height: 0; overflow: hidden; display: block; }
 
-.clear1 {
-  clear: both;
-  height: 5px;
-  font-size: 0px;
-  margin: 0px;
-  padding: 0px;
-  line-height: 0;
-  overflow: hidden;
-  display: block; }
+.clear1 { clear: both; height: 5px; font-size: 0px; margin: 0px; padding: 0px; line-height: 0; overflow: hidden; display: block; }
 
-.clear2 {
-  clear: both;
-  height: 10px;
-  font-size: 0px;
-  margin: 0px;
-  padding: 0px;
-  line-height: 0;
-  overflow: hidden;
-  display: block; }
+.clear2 { clear: both; height: 10px; font-size: 0px; margin: 0px; padding: 0px; line-height: 0; overflow: hidden; display: block; }
 
-.hide {
-  display: none; }
+.hide { display: none; }
 
-em {
-  font-style: normal; }
+em { font-style: normal; }
