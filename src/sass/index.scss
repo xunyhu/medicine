@@ -94,7 +94,7 @@
 	.frright {width:1008px;height:486px;position:relative;}
 	.lunbtu {width:605px;height:284px;position:absolute;top:0;left:0;}
 	.lunbtur {position:absolute;left:605px;top:0;right:0;height:284px;}
-	.lunbtur img {display:inline-block;width:198px;margin-right:2px}
+	.lunbtur img {display:inline-block;width:196px;margin-right:2px}
 	.lunbtub {position:absolute;top:284px;left:0;right:0;bottom:0;}
 	.lunbtub ul {
 		overflow:hidden;
@@ -106,32 +106,39 @@
 }
 // 楼梯样式
 #loutiNav {
-	width: 30px;
-	border: 1px solid black;
+	width: 48px;
 	position: fixed;
-	left: 100px;
-	top: 25%;
+	top : 173px;
+	right : 50%;
+	margin-right : 600px;
+	z-index : 99;
+	a {display:block;width:48px;border: 1px solid #E6E6E6;border-bottom: none;
+	    text-align: center;height : 40px;
+	    color: #157CDB;
+	    padding: 5px 0;
+	    text-decoration: none;
+	    font-family: "Microsoft YaHei";
+	}
 	li {
-		width: 30px;
+		width: 48px;
 		height: 30px;
-		font-size: 14px;
+		font-size: 14px;padding: 5px 0;
 		text-align: center;
-		line-height: 30px;
-		border-bottom: 1px dashed #ccc;
+		border: 1px solid #E6E6E6;border-bottom: none;
 		cursor: pointer;
 		position: relative;
 		span {
 			display: none;
 			position: absolute;
-			left: 0;
+			left: 0;text-align: center;
 			top: 0;
-			width: 30px;
-			height: 30px;
-			background: darkred;
+			width: 48px;
+			height: 40px;
+			background: #157CDB;
 			color: white;
 			font-size: 12px;
 		}
-	.active {display:block;background:white;color:red;}
+	.active {display:block;background:#157CDB;color: white;}
 	}
 	li:hover span {display:block;}
 }

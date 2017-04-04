@@ -1,8 +1,8 @@
 requirejs(['config'],function(){
-	requirejs(['jquery','carousel'],function($,car){
+	requirejs(['jquery','carousel','floor'],function($,car,floor){
 		$('header').load('http://localhost:3000/medicine/html/head.html');
 		$('footer').load('http://localhost:3000/medicine/html/foot.html');
-
+		floor.init();
 
 
 
@@ -40,6 +40,54 @@ requirejs(['config'],function(){
 				$('<li\>').html('<a href="javascript:;">心理咨询</a>').appendTo($ul);
 			};
 			$('.broll').append($ul);
+
+
+			//楼梯
+			var bool = true;
+			var $louc = $('#loutiNav');
+			$louc.find('li').click(function(){
+				bool = !bool;
+				$(this).find('span').addClass('active').parent().siblings().find('span').removeClass('active');
+				var top  = $('#wrap-floor').find('.floor').eq( $(this).index()).offset().top ;
+				var half = ($(window).height() - $('.floor').first().height())/2;
+				$('html,body').animate({
+					'scrollTop': top - half
+				},function(){
+					//动画结束 改回bool值  让滚动事件正常触发
+					bool = true;
+				})
+			});
+			var $floor = $('.floor');
+			// console.log($('#loutiNav li').eq(0).find('span'));
+			// $('#loutiNav li').eq(0).find('span').addClass('active');
+			$(window).scroll(function(){
+				if(bool){
+					var current = $(window).scrollTop();
+					var  index ;
+					for (var i=0; i<$floor.length;i++){
+						if ( current >= $($floor[i]).offset().top ) {
+							index = i;
+						}							
+					}
+					//console.log(index);
+					$('#loutiNav li').eq(index).find('span').addClass('active').parent().siblings().find('span').removeClass('active');
+				}
+			});
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+			
 		})
 	})
 })

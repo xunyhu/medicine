@@ -330,7 +330,7 @@ em { font-style: normal; }
 
 .floor .lunbtur { position: absolute; left: 605px; top: 0; right: 0; height: 284px; }
 
-.floor .lunbtur img { display: inline-block; width: 198px; margin-right: 2px; }
+.floor .lunbtur img { display: inline-block; width: 196px; margin-right: 2px; }
 
 .floor .lunbtub { position: absolute; top: 284px; left: 0; right: 0; bottom: 0; }
 
@@ -344,12 +344,14 @@ em { font-style: normal; }
 
 .floor .lunbtub ul span { color: red; }
 
-#loutiNav { width: 30px; border: 1px solid black; position: fixed; left: 100px; top: 25%; }
+#loutiNav { width: 48px; position: fixed; top: 173px; right: 50%; margin-right: 600px; z-index: 99; }
 
-#loutiNav li { width: 30px; height: 30px; font-size: 14px; text-align: center; line-height: 30px; border-bottom: 1px dashed #ccc; cursor: pointer; position: relative; }
+#loutiNav a { display: block; width: 48px; border: 1px solid #E6E6E6; border-bottom: none; text-align: center; height: 40px; color: #157CDB; padding: 5px 0; text-decoration: none; font-family: "Microsoft YaHei"; }
 
-#loutiNav li span { display: none; position: absolute; left: 0; top: 0; width: 30px; height: 30px; background: darkred; color: white; font-size: 12px; }
+#loutiNav li { width: 48px; height: 30px; font-size: 14px; padding: 5px 0; text-align: center; border: 1px solid #E6E6E6; border-bottom: none; cursor: pointer; position: relative; }
 
-#loutiNav li .active { display: block; background: white; color: red; }
+#loutiNav li span { display: none; position: absolute; left: 0; text-align: center; top: 0; width: 48px; height: 40px; background: #157CDB; color: white; font-size: 12px; }
+
+#loutiNav li .active { display: block; background: #157CDB; color: white; }
 
 #loutiNav li:hover span { display: block; }
