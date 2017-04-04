@@ -1,3 +1,2 @@
-#node模块
-node_modules
-.sass-cache
+#node modules模块
+/node_modules

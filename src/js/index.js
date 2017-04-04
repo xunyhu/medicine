@@ -1,5 +1,5 @@
-define(['top'],function(top){
-
-	top.init();
-	
-});
+require([config],function(){
+	require(['jquery'],function($){
+		
+	})
+})

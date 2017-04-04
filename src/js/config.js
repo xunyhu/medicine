@@ -1,6 +1,6 @@
 //配置文件
 requirejs.config({
-	bashUrl : 'js',
+	// bashUrl : 'js',
 
 	paths : {
 		'jquery' : '../lib/jquery-3.1.1',
@@ -10,7 +10,3 @@ requirejs.config({
 	}
 });
 
-//加载模块
-requirejs(['index'],function(index){
-	
-})
