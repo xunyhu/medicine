@@ -58,11 +58,16 @@ requirejs(['config'],function(){
 				})
 			});
 			var $floor = $('.floor');
-			// console.log($('#loutiNav li').eq(0).find('span'));
-			// $('#loutiNav li').eq(0).find('span').addClass('active');
+
 			$(window).scroll(function(){
 				if(bool){
 					var current = $(window).scrollTop();
+					//楼梯显示隐藏
+					if (current > 896 && current < 5130) {
+						$('#loutiNav').show();
+					} else {
+						$('#loutiNav').hide();
+					}
 					var  index ;
 					for (var i=0; i<$floor.length;i++){
 						if ( current >= $($floor[i]).offset().top ) {
@@ -75,10 +80,52 @@ requirejs(['config'],function(){
 			});
 
 			//九层轮播图
-			
-
-
-
+			var $a = $('#wrap-floor').find('.lunbtu');
+			$($a[0]).carousel({
+				imglist : ['images/floor1-1.jpg','images/floor1-2.jpg','images/floor1-3.jpg'],
+				width : 605,
+				height : 284
+			});
+			$($a[1]).carousel({
+				imglist : ['images/floor2-1.jpg','images/floor2-2.jpg','images/floor2-3.jpg'],
+				width : 605,
+				height : 284
+			});
+			$($a[2]).carousel({
+				imglist : ['images/floor3-1.jpg','images/floor3-2.jpg','images/floor3-3.jpg'],
+				width : 605,
+				height : 284
+			});
+			$($a[3]).carousel({
+				imglist : ['images/floor4-1.jpg','images/floor4-2.jpg'],
+				width : 605,
+				height : 284
+			});
+			$($a[4]).carousel({
+				imglist : ['images/floor5-1.jpg','images/floor5-2.jpg'],
+				width : 605,
+				height : 284
+			});
+			$($a[5]).carousel({
+				imglist : ['images/floor6-1.jpg','images/floor6-2.jpg'],
+				width : 605,
+				height : 284
+			});
+			$($a[6]).carousel({
+				imglist : ['images/floor7-1.jpg','images/floor7-2.jpg','images/floor7-3.jpg'],
+				width : 605,
+				height : 284
+			});
+			$($a[7]).carousel({
+				imglist : ['images/floor8-1.jpg','images/floor8-2.jpg'],
+				width : 605,
+				height : 284
+			});
+			$($a[8]).carousel({
+				imglist : ['images/floor9-1.jpg','images/floor9-2.jpg'],
+				width : 605,
+				height : 284
+			});
 
 
 

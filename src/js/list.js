@@ -15,7 +15,7 @@ requirejs(['config'],function(){
 					// console.log(res)
 					$(res).each(function(idx,ele){
 						$('<li\>').html('<p class="combo"><a href="" class="teshu">1件</a><a href="">套餐1</a><a href="">套餐2</a><i></i></p>\
-										<img src="' + ele.img + '" alt="">\
+										<a href="http://localhost:3000/medicine/html/details.html?goodsid='+ ele.id +'"><img src="' + ele.img + '" alt=""></a>\
 										<p class="price">' + ele.price +'</p>\
 										<p class="type"><span>' + ele.type + '</span>'+ ele.description +'</p>\
 										<p class="comment">1药网自营<span fr>评论<em>'+ ele.commen +'</em>条</span></p>\
@@ -49,7 +49,7 @@ requirejs(['config'],function(){
 					var $ul = $('.concent-bottom ul');
 					$(res).each(function(idx,ele){
 						$('<li\>').html('<p class="combo"><a href="" class="teshu">1件</a><a href="">套餐1</a><a href="">套餐2</a><i></i></p>\
-										<img src="' + ele.img + '" alt="">\
+										<a href="http://localhost:3000/medicine/html/details.html?goodsid='+ ele.id +'"><img src="' + ele.img + '" alt=""></a>\
 										<p class="price">' + ele.price +'</p>\
 										<p class="type"><span>' + ele.type + '</span>'+ ele.description +'</p>\
 										<p class="comment">1药网自营<span fr>评论<em>'+ ele.commen +'</em>条</span></p>\
