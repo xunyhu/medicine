@@ -264,7 +264,7 @@ em { font-style: normal; }
 
 .wrap-concent .concent-right { width: 1000px; }
 
-.wrap-concent .concent-right .concent-top { width: 998px; height: 150px; }
+.wrap-concent .concent-right .concent-top { width: 998px; height: 100px; }
 
 .wrap-concent .concent-right .concent-top ul { overflow: hidden; }
 
@@ -282,9 +282,7 @@ em { font-style: normal; }
 
 .wrap-concent .concent-right .concent-bottom ul { overflow: hidden; }
 
-.wrap-concent .concent-right .concent-bottom li { float: left; width: 230px; padding: 8px; border: none; margin-bottom: 15px; }
-
-.wrap-concent .concent-right .concent-bottom li:hover { border: 1px solid #ccc; width: 228px; padding-bottom: 6px; }
+.wrap-concent .concent-right .concent-bottom li { float: left; width: 230px; height: 332px; padding: 8px; margin-bottom: 15px; }
 
 .wrap-concent .concent-right .concent-bottom img { width: 200px; }
 

@@ -13,7 +13,7 @@
 	.concent-right {
 		width:1000px;
 		.concent-top {
-			width:998px;height:150px;
+			width:998px;height:100px;
 			ul {
 				overflow:hidden;
 				li {float:left;height:24px;}
@@ -35,8 +35,8 @@
 		}
 		.concent-bottom {
 			ul {overflow:hidden;}
-			li {float:left;width:230px;padding:8px;border:none;margin-bottom:15px;}
-			li:hover {border:1px solid #ccc;width:228px;padding-bottom:6px;}
+			li {float:left;width:230px;height:332px;padding:8px;margin-bottom:15px;}
+			// li:hover {border:1px solid #ccc;width:226px;height:328px;}
 			img {width:200px;}
 			li {
 				.combo{

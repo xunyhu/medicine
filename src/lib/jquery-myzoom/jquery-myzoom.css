@@ -1,4 +1,8 @@
 .gdszoom{position:relative;}
-.gdszoom .minzoom{display:none;position: absolute;width:30px;height:30px;border:1px solid #fc0;background-color:#ff0;background-color: rgba(255,255,0,.3);filter:alpha(Opacity=30);}
-.gdszoom-big{display:none;position: absolute;width:480px;height:300px;overflow:hidden;}
+.gdszoom .minzoom{
+	display:none;position: absolute;width:30px;height:30px;border:1px solid #fc0;
+	background-color: #FFF;filter:alpha(Opacity=30);
+	border: 1px solid #CCC;cursor: crosshair;opacity: .6;
+}
+.gdszoom-big{display:none;position: absolute;width:480px;height:300px;overflow:hidden;border: 1px solid #999;z-index: 999}
 .gdszoom-big img{position: absolute;left:0;right:0;}

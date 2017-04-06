@@ -1,0 +1,66 @@
+@import "reset";
+
+.header {
+	width: 996px;
+    height: 100px;
+    margin: auto;
+    .logo {
+    	margin-left: 20px;
+   		padding-top: 20px;
+    }
+}
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    p {
+    	font-size: 12px;
+    	color: #5e5e5e;
+    }
+}
+.login {
+	width: 996px;
+    height: 365px;
+    margin: 0 auto;
+    border-top: 2px solid #0083ce;
+    box-shadow: 0 4px 18px 4px #ccc;
+    .fl {
+    	width:560px;height:365px;
+    }
+    .fr {
+    	width:400px;
+    	a {text-decoration:none;color:#0083ce;}
+    	h4{float:left;font-size:20px;height:50px;line-height:50px;}
+    	.top p {float:right;height:50px;line-height:50px;padding-right:20px; }
+    	input {
+    		width: 300px;
+    		padding-left:30px;
+		    height: 36px;
+		    font-size: 14px;
+		    color: #ccc;
+		    border: 1px solid #e6e6e6;
+    	}
+    	#username {
+    		background: url(http://localhost:3000/medicine/images/regest.png) no-repeat 5px -115px;
+    		margin-top:20px;
+    	}
+    	#password {
+    		background: url(http://localhost:3000/medicine/images/regest.png) no-repeat 5px -146px;
+    		margin-top:40px;
+    	}
+    	#chcek {
+    		padding:0;width:14px;height:14px;margin-top:30px;
+    	}
+    	p {height:24px;line-height:24px;}
+
+    	#btn {
+    		width: 340px;
+		    height: 38px;
+		    display: block;
+		    background: #0083ce;
+		    border: 0;
+		    color: white;
+		    margin-top:15px;
+    	}
+    	#btn:hover {background: #0099F1}
+    }
+}

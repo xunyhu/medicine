@@ -15,18 +15,13 @@
 			zoomColor:'rgba(255,255,0,0.5)'
 		}
 
-		// 覆盖默认参数
-		// ES6
-		// var opt = Object.assign({},defaults,options);
-
-		// jQuery的静态方法
 		var opt = $.extend({},defaults,options);
 
 		// 遍历
 		this.each(function(){
 			// 获取小图
 			var $smallContainer = $(this).addClass('gdszoom');
-			var $smallImg = $smallContainer.children('img');
+			// var $smallImg = $smallContainer.children('img');
 			var $bigContainer;
 			var $bigImg;
 			var $minZoom;
@@ -34,10 +29,10 @@
 
 
 			init();
-
 			// 初始化函数
 			function init(){
-				
+
+				var $smallImg = $smallContainer.children('img');
 				// 创建放大镜
 				$minZoom = $('<span/>').addClass('minzoom').appendTo($smallContainer);
 
@@ -45,7 +40,7 @@
 
 				var imgUrl = $smallImg.data('big') || $smallImg.attr('src');
 				$bigImg = $('<img/>').attr('src',imgUrl);
-
+				//console.log($bigImg);
 				// 大图写入页面
 				$bigContainer.append($bigImg).appendTo('body');
 
@@ -56,8 +51,7 @@
 					var top = $smallContainer.offset().top;
 					if(opt.position === 'left'){
 						left = $smallContainer.offset().left - opt.width - opt.gap;
-
-						console.log($smallContainer.offset().left,opt.width,opt.gap)
+						//console.log($smallContainer.offset().left,opt.width,opt.gap)
 					}else if(opt.position === 'right'){
 						left = $smallContainer.offset().left + $smallImg.outerWidth() + opt.gap;
 					}else if(opt.position === 'bottom'){
@@ -77,23 +71,10 @@
 					height:opt.height
 				})
 
-				
-
-
-				// 等大图加载完成后
-				// 获取图片信息
-				/*$bigImg[0].onload = function(){
-
-					// 大图小图的比例
-					ratio = $smallImg.outerWidth()/$bigImg.outerWidth();
-
-					console.log($smallImg.outerWidth(),$bigImg.outerWidth())
-				}*/
-
 				// 事件绑定
 				$smallContainer.on('mouseenter',function(){
-					show();
-					
+					//init();
+					show();					
 				}).on('mouseleave',function(){
 					hide();
 				}).on('mousemove',function(e){
@@ -124,6 +105,7 @@
 
 			// 显示
 			function show(){
+				var $smallImg = $smallContainer.children('img');
 				$bigContainer.show();
 				$minZoom.show();
 
