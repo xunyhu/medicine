@@ -160,6 +160,10 @@
 
 .wrap-headnav .headnav .headright ul li { float: left; margin-left: 6px; line-height: 46px; font-size: 16px; cursor: pointer; padding: 0 16px; font-family: "Microsoft YaHei"; color: #505050; }
 
+.wrap-headnav .headnav .headright ul li a { text-decoration: none; color: #505050; }
+
+.wrap-headnav .headnav .headright ul li a:hover { color: #0083ce; }
+
 .wrap-headnav .headnav .headright .haiw { position: relative; padding-left: 22px; }
 
 .wrap-headnav .headnav .headright .haiw b { display: inline-block; width: 20px; height: 20px; background: url(img/haitao_ico.gif); position: absolute; top: 13px; left: -2px; }

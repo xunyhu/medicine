@@ -2,3 +2,12 @@
 @import "head";
 @import "foot";
 
+.zoom{
+	width:1190px;margin:0 auto;margin-top:30px;
+	.big {width:298px;height:298px;padding:10px;border:1px solid #ddd;}
+	.big img {width:298px;}
+	ul {overflow:hidden}
+	ul li {float:left;padding:5px;cursor:pointer;}
+	ul li img {width:50px;box-sizing:border-box;padding:2px;}
+	.active img{border:1px solid #f00;}
+}

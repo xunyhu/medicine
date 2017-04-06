@@ -245,6 +245,10 @@ $color2 : #5e5e5e;//字体颜色
 				float:left;margin-left:6px;line-height: 46px;
 				font-size:16px;    cursor: pointer;
 				padding: 0 16px;    font-family: "Microsoft YaHei";    color: #505050;
+				a {
+					text-decoration:none;color: #505050;
+				}
+				a:hover{color:$color1;}
 			}
 			.haiw {position:relative;padding-left:22px;}
 			.haiw b {

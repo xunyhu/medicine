@@ -126,6 +126,11 @@ requirejs(['config'],function(){
 				width : 605,
 				height : 284
 			});
+			var $b = $('#wrap-floor').find('.frleft h4');
+			var $c = $('#wrap-floor').find('.floor');
+			//console.log($b[1]);
+			$($b[1]).css({'background':'#8cd7d3'});
+			$($c[1]).css({'border-top':'1px solid #8cd7d3'});
 
 
 

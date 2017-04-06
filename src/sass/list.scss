@@ -13,7 +13,25 @@
 	.concent-right {
 		width:1000px;
 		.concent-top {
-			width:998px;height:150px;border:1px solid #ccc;
+			width:998px;height:150px;
+			ul {
+				overflow:hidden;
+				li {float:left;height:24px;}
+				li span {padding:0 20px;}
+			}
+			div {
+				width:976px;padding:0 10px;border:1px solid #ccc;
+				p {
+					height:32px;line-height:32px;border-bottom:1px solid #ccc;
+					a {
+						display:inline-block;
+						text-decoration:none;
+						padding:0 30px;
+						color:#5e5e5e;
+					}
+					a:hover {color:red}
+				}
+			}
 		}
 		.concent-bottom {
 			ul {overflow:hidden;}

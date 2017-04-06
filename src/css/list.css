@@ -186,6 +186,10 @@ em { font-style: normal; }
 
 .wrap-headnav .headnav .headright ul li { float: left; margin-left: 6px; line-height: 46px; font-size: 16px; cursor: pointer; padding: 0 16px; font-family: "Microsoft YaHei"; color: #505050; }
 
+.wrap-headnav .headnav .headright ul li a { text-decoration: none; color: #505050; }
+
+.wrap-headnav .headnav .headright ul li a:hover { color: #0083ce; }
+
 .wrap-headnav .headnav .headright .haiw { position: relative; padding-left: 22px; }
 
 .wrap-headnav .headnav .headright .haiw b { display: inline-block; width: 20px; height: 20px; background: url(img/haitao_ico.gif); position: absolute; top: 13px; left: -2px; }
@@ -260,7 +264,21 @@ em { font-style: normal; }
 
 .wrap-concent .concent-right { width: 1000px; }
 
-.wrap-concent .concent-right .concent-top { width: 998px; height: 150px; border: 1px solid #ccc; }
+.wrap-concent .concent-right .concent-top { width: 998px; height: 150px; }
+
+.wrap-concent .concent-right .concent-top ul { overflow: hidden; }
+
+.wrap-concent .concent-right .concent-top ul li { float: left; height: 24px; }
+
+.wrap-concent .concent-right .concent-top ul li span { padding: 0 20px; }
+
+.wrap-concent .concent-right .concent-top div { width: 976px; padding: 0 10px; border: 1px solid #ccc; }
+
+.wrap-concent .concent-right .concent-top div p { height: 32px; line-height: 32px; border-bottom: 1px solid #ccc; }
+
+.wrap-concent .concent-right .concent-top div p a { display: inline-block; text-decoration: none; padding: 0 30px; color: #5e5e5e; }
+
+.wrap-concent .concent-right .concent-top div p a:hover { color: red; }
 
 .wrap-concent .concent-right .concent-bottom ul { overflow: hidden; }
 

@@ -7,10 +7,12 @@ requirejs.config({
 		'temp' : '../lib/template-debug',
 		'index' : 'index',
 		'carousel' : '../lib/jquery-carousel/jquery-carousel',
-		'floor' : 'floor'
+		'floor' : 'floor',
+		'myzoom' : '../lib/jquery-myzoom/jquery-myzoom'
 	},
 	shim : {
-		'carousel' : ['jquery']
+		'carousel' : ['jquery'],
+		'myzoom' : ['jquery']
 	}
 });
 
