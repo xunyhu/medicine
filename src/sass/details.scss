@@ -2,12 +2,208 @@
 @import "head";
 @import "foot";
 
-.zoom{
-	width:1190px;margin:0 auto;margin-top:30px;
-	.big {width:298px;height:298px;border:1px solid #ddd;}
-	.big img {width:298px;}
-	ul {overflow:hidden}
-	ul li {float:left;padding:5px;cursor:pointer;}
-	ul li img {width:50px;box-sizing:border-box;padding:2px;}
-	.active img{border:1px solid #f00;}
+.detailnav{
+	width:1100px;margin:0 auto;
+	height:24px;line-height:24px;
+	padding:10px 18px;
+	.linkhome {
+		padding-left:25px;
+		background:url(http://localhost:3000/medicine/images/yw_home.png) no-repeat 0 -3px;
+	}
+	.arrow {padding:15px;}
+}
+
+.wrap-detail{
+	width:1100px;margin:0 auto;overflow:hidden;
+	.zoom{
+		width:300px;height:400px;float:left;
+		.big {width:298px;height:298px;border:1px solid #ddd;}
+		.big img {width:298px;}
+		ul {overflow:hidden}
+		ul li {float:left;padding:5px;cursor:pointer;}
+		ul li img {width:50px;box-sizing:border-box;padding:2px;}
+		.active img{border:1px solid #f00;}
+	}
+	.introduce{
+		width:480px;height:440px;margin:0 20px;float:left;
+		h1 {
+			margin-bottom:10px;font-weight:bold;font-size:17px;font-family:'microsoft yahei';
+			height:20px;padding:2px;
+			span {
+				display:inline-block;color:#0193e8;border:1px solid #0193e8;font-weight:normal;padding:2px 3px;
+			}
+		}
+		p:nth-child(2) {color:red;}
+		p:nth-child(3) {
+			height:35px;line-height:35px;
+			span {color:red;font-size:16px;padding:0 3px;}
+		}
+		p:nth-child(4),p:nth-child(5) {
+			margin-top:20px;
+			span {padding:5px;margin-right:5px;}
+			span:first-child{color: #e72418;border:1px solid #e72418;}
+			span:hover{
+				color: #e72418;border:1px solid #e72418;
+			}
+		}
+		p:nth-child(5) {margin-top:30px;}
+		dl {
+			height:55px;margin-top:20px;
+			dt,dd{float:left;height: 38px;line-height: 38px;}
+			dd {
+				input {
+					width: 73px;
+				    height: 38px;				    
+				    padding: 0 5px;
+				    border: 1px solid #e6e6e6;
+				    font-size: 14px;
+				}
+				div {
+					width:106px;height:40px;position:relative;
+					span {
+						width:19px;height:17px;cursor: pointer;border:1px solid #f3f3f3;
+						position:absolute;line-height:19px;text-align:center;
+					}
+					#add{top:0;right:0;transform:rotate(180deg);-webkit-transform:rotate(180deg);}
+					#cut{top:22px;right:0}
+				}
+			}
+		}
+		.scan {
+			height:28px;margin-bottom:14px;width:240px;
+			border: 1px solid #e6e6e6;line-height:28px;
+    		background-color: #f8f8f8;
+    		i {
+    			display:block;width:15px;height:19px;margin:5px;float:left;
+    			background:url(http://localhost:3000/medicine/images/mobPrice.png) no-repeat;
+    		}
+    		span {
+    			color:red;padding-right:5px;
+    		}
+		}
+		#addcar {
+			border:none;
+			width:242px;height:53px;line-height:53px;
+			background-color: #d80000;
+    		border-bottom: 3px solid #9a0900;
+    		color:#fff;font-size:18px;
+    		cursor:pointer;
+    		margin-bottom:30px;
+		}
+		#addcar:hover {background-color:#9a0900;}
+
+	}
+	.property{
+		width:190px;height:449px;border:1px solid #ccc;float:left;
+		h3 {
+			padding: 9px 13px;
+		    line-height: 1.5;
+		    background-color: #0083ce;
+		    font-size: 14px;
+		    color: #fff;
+		    font-weight: 400;
+		    margin: -1px -1px 0;
+		    span {
+		    	font-weight: 700;
+    			display: block;
+		    }
+		    a {    color: #fff;}
+		}
+		img {
+			width:120px;height:120px;padding:12px 30px;
+		}
+		p {
+			text-align:center;font-weight:700;
+			span {color:red;}
+		}
+		P:hover{color:red;}
+	}
+}
+/*吸顶菜单*/
+.pingjia{
+	overflow:hidden;width:1100px;margin:0 auto;margin-top:30px;
+	.concent-left {
+		width : 180px;
+		ul {margin-bottom:10px;}		
+		ul li {height:40px;line-height:40px;background:#f5f5f5;padding-left:20px;}
+		li:first-child {background:#ddd;height:40px;line-height:40px;font-weight:bolder;}
+	}
+	.ceiling{
+		float:left;overflow:hidden;margin-left:30px; 
+	    width: 800px;
+	    ul {width: 800px;overflow:hidden;border: 1px solid #e6e6e6;border-top: 2px solid #0083ce; background-color: #f7f7f7;}
+	    li {
+	    	float:left;padding:0 20px;height:40px;line-height:40px;
+	    }
+	    li:first-child{background:#fff;color:#0083ce;font-weight:700;}
+	    li:hover{background:#fff;color:#0083ce;font-weight:700;}
+	    div {width:760px;margin-top:20px;background-color: #f7f7f7;padding:20px;}
+	    div p {height:26px;line-height:26px;}
+	}
+
+}
+.topactive {position:fixed;top:0;}
+
+
+/*  右侧固定菜单栏 */
+.rightnav{
+	position: fixed;
+    right: 28px;
+    bottom: 40px;
+    z-index: 100;
+    width: 52px;
+    height:200px;
+    .weixi,.car,.feedback,.topback {
+    	display:inline-block;width:52px;height:52px;margin:0;padding:0;float:left;
+    	background:url(http://localhost:3000/medicine/images/common_sprite.png) no-repeat right 0;
+    }
+    .weixi {    background-position: 0 -622px;}
+    .car {
+    	background-position: 0 -675px;position:relative;
+    	em {
+    		color: #fff;
+		    width: 16px;
+		    height: 16px;
+		    background: red;
+		    border-radius: 50%;
+		    display: inline-block;
+		    text-align: center;
+		    line-height: 14px;
+		    position: absolute;
+		    left: 27px;
+		    top: 7px;
+    	}  	
+    }
+    .car:hover {
+    	background-position: -52px -674px;
+    	text-indent: -999px;
+    }
+    .car:hover em {display:none;}
+    .feedback {    background-position: 0 -777px;}
+    .topback{
+    	background-position: 0 -827px;
+    	span {
+    		font-family: "Microsoft YaHei";
+		    font-size: 16px;
+		    line-height: 20px;
+		    font-weight: 400;
+		    color:#fff;
+		    background-color:red;
+			display:inline-block;
+			width:42px;height:42px;padding:8px 0 0 10px;
+			display:none;
+    	}
+    }
+    .topback:hover span {display:block;}
+
+    .nothing {
+    	position:absolute;z-index:99;background:#fff;
+    	top:0;
+    	left:-224px;
+    	width:200px;height:184px;
+    	padding:10px;
+    	border:1px solid red;
+    	display:none;
+    	a {color:#0083ce;font-weight:700;}
+    }
 }

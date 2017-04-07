@@ -5,13 +5,79 @@
 	<title>注册</title>
 	<link rel="shortcut  icon" type="image/x-icon" href="../images/logo-mini2.ico" media="screen">
 	<link rel="stylesheet" href="../css/register.css">
-	<script src="../js/register.js"></script>
+	<script src="../js/AjaxBase.js"></script>
+	<script>
+		window.onload = function(){
+			var phone = document.querySelector('#phone');
+			var passw = document.querySelector('#password');
+			var comfirm = document.querySelector('#comfirm');
+			var check = document.querySelector('#check');
+			var btn = document.querySelector('#submit');
+			var tips1 = document.querySelector('#gg');
+			var tips2 = document.querySelector('#gg1');
+			var tips3 = document.querySelector('#gg2');
+
+			var reg1 = /^1[358]\d{9}$/;
+			var reg2 = /^(\w){6,20}$/;
+			var bool;
+
+			phone.onblur = function(){
+				if (reg1.test(phone.value)) {
+					tips1.style.display = "inline-block";
+					bool = true;
+				} else {
+					alert('手机格式不对');
+					bool = false;
+				}
+			};
+
+			passw.onblur = function(){
+				if (reg2.test(passw.value)) {
+					tips2.style.cssText = "display:inline-block";
+					bool = true;
+				} else {
+					alert('密码只能由数字字母下划线，长度6到20组成');
+					bool = false;
+				}
+			};
+
+			comfirm.onblur = function(){
+				if (passw.value == comfirm.value) {
+					tips3.style.cssText = "display:inline-block";
+					bool = true;
+				} else {
+					console.log('两次密码输入不一致');
+					bool = false;
+				}
+			};
+
+			btn.onclick = function(){
+				if(check.checked && bool) {
+					var xhr = createXHR();
+					xhr.open("POST", "../api/register.php", true);
+					xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+					var params = "phone=" + phone.value + "&password=" + passw.value ;
+					xhr.send(params);
+					xhr.onreadystatechange = function() {
+	                    if (xhr.readyState == 4 && xhr.status == 200) {
+	                        alert(xhr.responseText);
+	                    }
+	                }
+				} else {
+					console.log("请阅读用户协议")
+				}
+			}
+		}
+	</script>
 </head>
 <body>
 	<div class="header">
 			<a href="http://localhost:3000/medicine/"><img src="http://localhost:3000/medicine/images/yao_logo.png"/></a>
 	</div>
 	
+
+
+
 	<div class="register">
 		<div class="reg-left fl">
 			<h4>Hi!&nbsp;欢迎注册</h4>
@@ -38,6 +104,13 @@
 			<div></div>
 		</div>
 	</div>
+
+
+
+
+
+
+
 	
 	<div class="footer">
 		<p>1药网网上药店,国家药监局认证通过的合法网上药店，中国医药电子商务行业的开拓者领跑者。粤ICP备12015869号-1</p>

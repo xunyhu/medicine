@@ -25,6 +25,8 @@ img { border: 0; }
 
 em { font-style: normal; }
 
+a { text-decoration: none; }
+
 .header { width: 996px; height: 100px; margin: auto; }
 
 .header .logo { margin-left: 20px; padding-top: 20px; }

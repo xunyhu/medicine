@@ -32,7 +32,7 @@ $color2 : #5e5e5e;//字体颜色
 				position : absolute;
 				top : 36px;
 				left : -1px;
-				z-index : 10;
+				z-index : 1001;
 				display : none;
 				li {
 					line-height: 22px;
@@ -169,7 +169,7 @@ $color2 : #5e5e5e;//字体颜色
 				font:400 15px/48px tahoma,arial,Microsoft YaHei;
 			}
 			.goodsfl {
-				display:none;
+				display:none;z-index:1000;
 				width:180px;height:400px;position:relative;
 				ul {overflow:hidden}
 				ul li {width:180px;height:40px;background:#314349;}

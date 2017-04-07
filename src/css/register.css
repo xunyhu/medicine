@@ -25,6 +25,8 @@ img { border: 0; }
 
 em { font-style: normal; }
 
+a { text-decoration: none; }
+
 .header { width: 996px; height: 88px; margin: auto; }
 
 .header .logo { margin-left: 20px; padding-top: 20px; }
@@ -41,7 +43,7 @@ em { font-style: normal; }
 
 .register #gg, .register #gg1, .register #gg2 { width: 42px; height: 42px; display: inline-block; vertical-align: sub; display: none; }
 
-.register #gg img, .register #gg1 img, .register #gg2 img { width: 42px; }
+.register #gg img, .register #gg1 img, .register #gg2 img { width: 22px; }
 
 .register #check { width: 13px; height: 13px; margin-bottom: 2px; }
 

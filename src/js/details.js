@@ -1,6 +1,21 @@
 requirejs(['config'],function(){
 	requirejs(['jquery','myzoom'],function($,myzoom){
-		$('header').load('http://localhost:3000/medicine/html/head.html');
+		$('header').load('http://localhost:3000/medicine/html/head.html',function(){
+			//分类菜单显示
+			var timer;
+			$('.selection').hover(function(){
+				clearTimeout(timer);
+				$('.goodsfl').show();
+			},function(){
+				timer = setTimeout(function(){
+					$('.goodsfl').hide();
+				},2000);
+			});
+			//地区选择
+			$('.top-left').on('click','span',function(){
+				$('.city').text($(this).text());
+			})
+		});
 		$('footer').load('http://localhost:3000/medicine/html/foot.html');
 
 		//console.log(location.search);
@@ -20,10 +35,23 @@ requirejs(['config'],function(){
 								<li><img src="'+ result[0].simg3 +'"></li>\
 								<li><img src="'+ result[0].simg4 +'"></li>\
 							</ul>')
+
+
+
+
+			//放大镜
+			$('.big').myzoom({width:380,height:380,gap:20});
+			//鼠标移入改变图片
+			$('.zoom').on('mouseover','li',function(){
+				$(this).addClass('active').siblings().removeClass('active');
+				$(this).parent().siblings().children()[0].src = $(this).children('img')[0].src;
+				$(this).parent().siblings().children()[0].dataset.big = $(this).children('img')[0].src;
+			});
+
 		});
 
 
-		$(function(){
+		
 
 			//放大镜
 			//$('.zoom').children('.big').myzoom({width:380,height:380,gap:20});
@@ -40,17 +68,66 @@ requirejs(['config'],function(){
 			// 	$(this).addClass('active').siblings().removeClass('active');
 			// });
 
-			$('.zoom').on('mouseover','li',function(){
-				$(this).addClass('active').siblings().removeClass('active');
-				$(this).parent().siblings().children()[0].src = $(this).children('img')[0].src;
-			});
+			
 			// $('.zoom').on('mouseenter','.big',function(){
 			// 	$('.big').myzoom({width:380,height:380,gap:20});
 			// });
 
+			
+
+			//回到顶部
+			$('.topback').click(function(){
+				$('html,body').animate({scrollTop:'0px'},'slow');
+			});
+
+			//吸顶
+			function nav(){
+		      var height=0;
+		          height = $(".xiding").offset().top;
+		          //console.log(height);
+		      $(window).scroll(function() {
+		        var w = $("body").scrollTop() || $(document).scrollTop(); //获取滚动值
+		        if(w > height) {
+					$(".xiding").addClass("topactive");
+				} else if(w <= 0){
+					$(".xiding").removeClass("topactive")
+				}else{
+					$(".xiding").removeClass("topactive")
+			  	}
+		      });
+		    }
+		    $(window).scroll(function(){
+		    	nav()
+		    });
+			
+			
+			//购物车图标hover显示
+			var timer;
+			$('.car').on('mouseover',function(){
+				clearTimeout(timer);
+				$('.nothing').css({
+					display : 'block'
+				})
+			}).on('mouseleave',function(){
+				timer = setTimeout(function(){
+					$('.nothing').hide();
+				},1000);
+			});
+
+
+			//商品数量增加减少
+			$('#add').click(function(){
+				$('#amount')[0].value++;
+			});
+			$('#cut').click(function(){
+				if ($('#amount')[0].value > 1) {
+					$('#amount')[0].value--;
+				}				
+			});
+			
 
 			
-		});
+		
 
 	})
 })
