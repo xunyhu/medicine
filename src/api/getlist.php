@@ -38,7 +38,7 @@
 	
 	$page = $_GET["page"];
 	$pageNum = ($page-1)*16;
-	$sql = "select * from list limit $pageNum,16";
+	$sql = "select * from mylist limit $pageNum,16";
 	$result = query($sql);
 	echo json_encode($result);
 	

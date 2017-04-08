@@ -32,7 +32,7 @@
 	}
 
 	$num = $_GET["num"];
-	$sql = "select * from list where id=$num";
+	$sql = "select * from mylist where id=$num";
 	$result = query($sql);
 	echo json_encode($result);
 ?>

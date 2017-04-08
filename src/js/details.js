@@ -14,7 +14,23 @@ requirejs(['config'],function(){
 			//地区选择
 			$('.top-left').on('click','span',function(){
 				$('.city').text($(this).text());
-			})
+			});
+
+
+			$.post('../api/usename.php', function(res) {
+				var $obj = eval('(' + res + ')');
+				if($obj.state) {
+					$('.first').html('欢迎您,' + $obj.nowUser + '<a class="logoutA" href="">退出</a>');
+					$('.second').text(' ');
+				}
+
+
+				$('.logoutA').on('click', function() {
+					$.post('../api/quit.php', function(res) {
+						window.location.reload();
+					})
+				});
+			});
 		});
 		$('footer').load('http://localhost:3000/medicine/html/foot.html');
 

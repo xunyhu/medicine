@@ -49,7 +49,7 @@ a { text-decoration: none; }
 
 .login .fr input { width: 300px; padding-left: 30px; height: 36px; font-size: 14px; color: #ccc; border: 1px solid #e6e6e6; }
 
-.login .fr #username { background: url(http://localhost:3000/medicine/images/regest.png) no-repeat 5px -115px; margin-top: 20px; }
+.login .fr #phone { background: url(http://localhost:3000/medicine/images/regest.png) no-repeat 5px -115px; margin-top: 20px; }
 
 .login .fr #password { background: url(http://localhost:3000/medicine/images/regest.png) no-repeat 5px -146px; margin-top: 40px; }
 

@@ -1,6 +1,21 @@
 requirejs(['config'],function(){
 	require(['jquery'],function($){
-		$('header').load('http://localhost:3000/medicine/html/head.html');
+		$('header').load('http://localhost:3000/medicine/html/head.html',function(){
+			$.post('../api/usename.php', function(res) {
+				var $obj = eval('(' + res + ')');
+				if($obj.state) {
+					$('.first').html('欢迎您,' + $obj.nowUser + '<a class="logoutA" href="">退出</a>');
+					$('.second').text(' ');
+				}
+
+
+				$('.logoutA').on('click', function() {
+					$.post('../api/quit.php', function(res) {
+						window.location.reload();
+					})
+				});
+			})
+		});
 		$('footer').load('http://localhost:3000/medicine/html/foot.html');
 
 		$(function(){
@@ -23,7 +38,7 @@ requirejs(['config'],function(){
 											<input type="button" value="-" class="cut">\
 											<input type="text" value="1" class="vue">\
 											<input type="button" value="+" class="add">\
-											<a href="">加入购物车</a>\
+											<a href="" class="addcar" data-goodid="'+ ele.id +'">加入购物车</a>\
 										</div>').appendTo($ul);
 					});
 
@@ -34,6 +49,25 @@ requirejs(['config'],function(){
 							$(this).css({'background':"#69d283"})
 						}
 					});
+
+
+					var $add = $(".addcar");
+					var userid;
+					var goodid;
+					$add.on("click",function(){
+						userid = location.search.slice(1).split("=")[1];
+						goodid = $(this).data("goodid");
+						$.post('../api/addcar.php',{"user":userid,"goodsid":goodid},function(response){
+							 if (response == "success"){
+                                alert("加入购物车成功!");
+                             } else {
+                                alert("加入购物车失败!");
+                             }
+						});
+						return false;
+					});
+
+
 				}
 			});
 
@@ -66,9 +100,9 @@ requirejs(['config'],function(){
 							$(this).css({'background':"#69d283"})
 						}
 					});
-				})
-			})
+				});
+			});
 
-		})
-	})
+		});
+	});
 })
