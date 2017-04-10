@@ -319,3 +319,30 @@ a { text-decoration: none; }
 .wrap-concent .concent-right .concent-bottom .page span { margin-right: 3px; padding: 8px; border: 1px solid #ccc; }
 
 .wrap-concent .concent-right .concent-bottom .page .active { color: #fff; background-color: #0083ce; border: 1px solid #0083ce; }
+
+/*  右侧固定菜单栏 */
+.rightnav { position: fixed; right: 28px; bottom: 40px; z-index: 100; width: 52px; height: 200px; }
+
+.rightnav .weixi, .rightnav .car, .rightnav .feedback, .rightnav .topback { display: inline-block; width: 52px; height: 52px; margin: 0; padding: 0; float: left; background: url(http://localhost:3000/medicine/images/common_sprite.png) no-repeat right 0; }
+
+.rightnav .weixi { background-position: 0 -622px; }
+
+.rightnav .car { background-position: 0 -675px; position: relative; }
+
+.rightnav .car em { color: #fff; width: 16px; height: 16px; background: red; border-radius: 50%; display: inline-block; text-align: center; line-height: 14px; position: absolute; left: 27px; top: 7px; }
+
+.rightnav .car:hover { background-position: -52px -674px; text-indent: -999px; }
+
+.rightnav .car:hover em { display: none; }
+
+.rightnav .feedback { background-position: 0 -777px; }
+
+.rightnav .topback { background-position: 0 -827px; }
+
+.rightnav .topback span { font-family: "Microsoft YaHei"; font-size: 16px; line-height: 20px; font-weight: 400; color: #fff; background-color: red; display: inline-block; width: 42px; height: 42px; padding: 8px 0 0 10px; display: none; }
+
+.rightnav .topback:hover span { display: block; }
+
+.rightnav .nothing { position: absolute; z-index: 99; background: #fff; top: 0; left: -224px; width: 200px; height: 184px; padding: 10px; border: 1px solid red; display: none; }
+
+.rightnav .nothing a { color: #0083ce; font-weight: 700; }
