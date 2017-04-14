@@ -1,7 +1,7 @@
-#node modules模块
+﻿#node modules模块
 /node_modules
 
 #img
-/src/images
+/src/sass
 
 .project

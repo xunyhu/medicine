@@ -53,18 +53,18 @@ a { text-decoration: none; }
 
 .register .reg-left p { margin: 10px 0 0 100px; }
 
-.register .reg-left .last { width: 342px; height: 46px; background: url(http://localhost:3000/medicine/images/img_zhifu.png) no-repeat; }
+.register .reg-left .last { width: 342px; height: 46px; background: url(../images/img_zhifu.png) no-repeat; }
 
 .register .reg-right p { margin-top: 20px; font-size: 14px; color: #ccc; text-align: right; padding-right: 20px; }
 
-.register .reg-right div { width: 500px; height: 370px; background: url(http://localhost:3000/medicine/images/r_bg_02.png) no-repeat; }
+.register .reg-right div { width: 500px; height: 370px; background: url(../images/r_bg_02.png) no-repeat; }
 
 .footer { text-align: center; margin-top: 20px; }
 
 .footer p { font-size: 12px; color: #5e5e5e; }
 
-#phone { background: url(http://localhost:3000/medicine/images/regest.png) no-repeat 5px -115px; }
+#phone { background: url(../images/regest.png) no-repeat 5px -115px; }
 
-#password { background: url(http://localhost:3000/medicine/images/regest.png) no-repeat 5px -146px; }
+#password { background: url(../images/regest.png) no-repeat 5px -146px; }
 
-#comfirm { background: url(http://localhost:3000/medicine/images/regest.png) no-repeat 5px -146px; background-color: #f3f3f3; }
+#comfirm { background: url(../images/regest.png) no-repeat 5px -146px; background-color: #f3f3f3; }

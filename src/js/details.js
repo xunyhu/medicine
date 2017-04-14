@@ -1,6 +1,6 @@
 requirejs(['config'],function(){
 	requirejs(['jquery','myzoom'],function($,myzoom){
-		$('header').load('http://localhost:3000/medicine/html/head.html',function(){
+		$('header').load('head.html',function(){
 			//分类菜单显示
 			var timer;
 			$('.selection').hover(function(){
@@ -14,7 +14,7 @@ requirejs(['config'],function(){
 			//地区选择
 			$('.top-left').on('click','span',function(){
 				$('.city').text($(this).text());
-			});
+			})
 
 
 			$.post('../api/usename.php', function(res) {
@@ -32,7 +32,7 @@ requirejs(['config'],function(){
 				});
 			});
 		});
-		$('footer').load('http://localhost:3000/medicine/html/foot.html');
+		$('footer').load('foot.html');
 
 		//console.log(location.search);
 		var goodsid = location.search.substring(1).split('=');
@@ -40,7 +40,7 @@ requirejs(['config'],function(){
 		//console.log(decodeURI(goodsid));
 		var id = goodsid[1];
 
-		$.get('http://localhost:3000/medicine/api/details.php',{'num':id},function(res){
+		$.get('../api/details.php',{'num':id},function(res){
 			//console.log(res);
 			var result = JSON.parse(res);
 			//console.log(result[0]);
@@ -50,10 +50,38 @@ requirejs(['config'],function(){
 								<li><img src="'+ result[0].simg2 +'"></li>\
 								<li><img src="'+ result[0].simg3 +'"></li>\
 								<li><img src="'+ result[0].simg4 +'"></li>\
-							</ul>')
+							</ul>');
+
+			$('.introduce').html('<h1><span>'+ result[0].type +'</span>'+ result[0].description +'</h1>\
+								<p>'+ result[0].introduce +'</p>\
+								<p>药网价:<span>￥'+ result[0].price +'</span>  累计评论：'+ result[0].commen +'</p>\
+								<p>规格：<span>100粒</span><span>VE160粒+VC80粒</span><span>VE90粒+VC80粒</span></p>\
+								<p>套餐：<span>￥119/1件</span><span>[内外服用]祛斑养颜</span></p>\
+								<dl>\
+									<dt>数量：</dt>\
+									<dd>\
+										<div>\
+											<input type="text" value="1" id="amount">\
+											<span id="add">v</span>\
+											<span id="cut">v</span>\
+										</div>\
+									</dd>\
+								</dl>\
+								<p class="scan"><i></i>手机扫码更方便 ， <span>立即扫码</span>></p>\
+								<input type="button" value="加入购物车" id="addcar">\
+								<p>本商品由1药网销售和发货 </p>\
+								<p>18:00前下单预计当天出库，部分城市支持次日达。 运费详情 >></p>');
 
 
-
+			//商品数量增加减少
+			$('#add').click(function(){
+				$('#amount')[0].value++;
+			});
+			$('#cut').click(function(){
+				if ($('#amount')[0].value > 1) {
+					$('#amount')[0].value--;
+				}				
+			});
 
 			//放大镜
 			$('.big').myzoom({width:380,height:380,gap:20});
@@ -131,15 +159,7 @@ requirejs(['config'],function(){
 			});
 
 
-			//商品数量增加减少
-			$('#add').click(function(){
-				$('#amount')[0].value++;
-			});
-			$('#cut').click(function(){
-				if ($('#amount')[0].value > 1) {
-					$('#amount')[0].value--;
-				}				
-			});
+			
 			
 
 			

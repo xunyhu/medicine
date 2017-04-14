@@ -320,10 +320,11 @@ a { text-decoration: none; }
 
 .wrap-concent .concent-right .concent-bottom .page .active { color: #fff; background-color: #0083ce; border: 1px solid #0083ce; }
 
+
 /*  右侧固定菜单栏 */
 .rightnav { position: fixed; right: 28px; bottom: 40px; z-index: 100; width: 52px; height: 200px; }
 
-.rightnav .weixi, .rightnav .car, .rightnav .feedback, .rightnav .topback { display: inline-block; width: 52px; height: 52px; margin: 0; padding: 0; float: left; background: url(http://localhost:3000/medicine/images/common_sprite.png) no-repeat right 0; }
+.rightnav .weixi, .rightnav .car, .rightnav .feedback, .rightnav .topback { display: inline-block; width: 52px; height: 52px; margin: 0; padding: 0; float: left; background: url(../images/common_sprite.png) no-repeat right 0; }
 
 .rightnav .weixi { background-position: 0 -622px; }
 

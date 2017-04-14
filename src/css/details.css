@@ -256,7 +256,7 @@ a { text-decoration: none; }
 
 .detailnav { width: 1100px; margin: 0 auto; height: 24px; line-height: 24px; padding: 10px 18px; }
 
-.detailnav .linkhome { padding-left: 25px; background: url(http://localhost:3000/medicine/images/yw_home.png) no-repeat 0 -3px; }
+.detailnav .linkhome { padding-left: 25px; background: url(../images/yw_home.png) no-repeat 0 -3px; }
 
 .detailnav .arrow { padding: 15px; }
 
@@ -314,7 +314,7 @@ a { text-decoration: none; }
 
 .wrap-detail .introduce .scan { height: 28px; margin-bottom: 14px; width: 240px; border: 1px solid #e6e6e6; line-height: 28px; background-color: #f8f8f8; }
 
-.wrap-detail .introduce .scan i { display: block; width: 15px; height: 19px; margin: 5px; float: left; background: url(http://localhost:3000/medicine/images/mobPrice.png) no-repeat; }
+.wrap-detail .introduce .scan i { display: block; width: 15px; height: 19px; margin: 5px; float: left; background: url(../images/mobPrice.png) no-repeat; }
 
 .wrap-detail .introduce .scan span { color: red; padding-right: 5px; }
 
@@ -368,7 +368,7 @@ a { text-decoration: none; }
 /*  右侧固定菜单栏 */
 .rightnav { position: fixed; right: 28px; bottom: 40px; z-index: 100; width: 52px; height: 200px; }
 
-.rightnav .weixi, .rightnav .car, .rightnav .feedback, .rightnav .topback { display: inline-block; width: 52px; height: 52px; margin: 0; padding: 0; float: left; background: url(http://localhost:3000/medicine/images/common_sprite.png) no-repeat right 0; }
+.rightnav .weixi, .rightnav .car, .rightnav .feedback, .rightnav .topback { display: inline-block; width: 52px; height: 52px; margin: 0; padding: 0; float: left; background: url(../images/common_sprite.png) no-repeat right 0; }
 
 .rightnav .weixi { background-position: 0 -622px; }
 

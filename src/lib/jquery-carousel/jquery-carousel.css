@@ -1,44 +1,26 @@
-.carousel {position:relative;overflow: hidden;}
-.carousel img {display:block;}
-.carousel ul {position:relative;list-style:none;padding:0;margin:0;}
-.carousel.leftcarousel ul {overflow: hidden;}
-.carousel.leftcarousel ul li {float: left;}
+.gdscarousel{position:relative;overflow: hidden;}
+.gdscarousel img{display: block;}
+.gdscarousel ul{position:relative;list-style: none;padding:0;margin:0;width: 8000px;}
+.gdscarousel ul li{float: left;}
+.gdscarousel .big-wrap{position:relative;overflow:hidden;}
+.gdscarousel .fade li{position:absolute;left:0;top:0;opacity:0;}
+.gdscarousel .fade li:first-child{opacity:1;}
 
-.carousel .big-wrap {position:relative;overflow: hidden;}
+.gdscarousel .small{margin-top:10px;overflow:hidden;}
+.gdscarousel .small li{float:left;width:150px;}
+.gdscarousel .small img{width:140px;}
+.gdscarousel .small li{opacity: 0.5}
 
-div,body,ul,li,span{margin: 0;padding: 0}
 
-.carousel .fade li {position:absolute;left:0;top: 0;opacity: 0;}
-.carousel .fade li:first-child{opacity: 1;}
+.gdscarousel .page{position:absolute;right:0;bottom:0;padding:10px;}
+.gdscarousel .page span{display:inline-block;margin:0 5px;width:30px;height:30px;line-height:30px;background-color:rgba(0,0,0,.6);text-align:center;color:#fff;border-radius: 50%;box-shadow:0 0 10px rgba(0,0,0,.5);}
+.gdscarousel .page span.active{background-color: rgba(255,0,0,.8)}
 
-.carousel .small {margin-top:10px;overflow:hidden;}
-.carousel .small li {float:left;overflow: hidden;padding: 5px}
-.carousel .small img{width:140px;}
-.carousel .small li {opacity: 0.5}
-
-.carousel .page {position: absolute;bottom:0;padding:10px;overflow: hidden;}
-.carousel .page span {
-	display:inline-block;margin:0 5px;width: 30px;
-	height: 30px;line-height: 30px;text-align: center;
-	background-color: rgba(0,0,0,.6);
-	box-shadow: 0 0 10px rgba(0,0,0,.5);
-	border-radius: 50%;
-	color: #fff;
+.gdscarousel .page.page-center{
+	left:0;text-align:center;
 }
-.carousel .page span.active {background-color: rgba(255,0,0,.8)}
+.gdscarousel .page.page-center span{width:12px;height:12px;line-height: 12px;text-indent:-100px;overflow:hidden;}
 
-.carousel .page.page-center{left: 50%;transform: translate(-50%,0);}
-.carousel .page.page-left{left: 0;}
-.carousel .page.page-right{right: 0;}
-
-.carousel .btn-next,.carousel .btn-prev {
-	position:absolute;left: 0;top: 50%;text-align: center;
-	margin-top: -30px;width: 30px;height: 60px;line-height: 60px;
-	background-color: rgba(0,0,0,.5);color: #fff;
-}
-.carousel .btn-next:hover,.carousel .btn-prev:hover {
-	background-color: #f60;
-}
-.carousel .btn-next {
-	left:auto;right: 0;
-}
+.gdscarousel .btn-next,.gdscarousel .btn-prev{position:absolute;left:0;top:50%;margin-top:-30px;width:30px;height:60px;line-height: 60px;text-align:center;background-color: rgba(0,0,0,.5);color:#fff;}
+.gdscarousel .btn-next:hover,.gdscarousel .btn-prev:hover{background-color: #f60;}
+.gdscarousel .btn-next{left:auto;right:0;}

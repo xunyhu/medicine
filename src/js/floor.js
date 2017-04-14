@@ -20,11 +20,11 @@ define(['jquery','temp','carousel'],function($,temp,carousel){
 				                    ul :  ["银屑病","银屑病","银屑病","银屑病","银屑病","银屑病","银屑病","银屑病","银屑病",
 				                          "银屑病","银屑病","银屑病","银屑病","银屑病","银屑病","银屑病"],
 				                    right : ['images/floor2-4.jpg','images/floor2-5.jpg'],
-				                    bottom :   [{img : "images/floor1-10.jpg",title : "干枯草菌颗粒",price:"88.8"},
-				                               {img : "images/floor1-9.jpg",title : "干枯草菌颗粒",price:"88.8"},
-				                               {img : "images/floor1-8.jpg",title : "干枯草菌颗粒",price:"88.8"},
-				                                {img : "images/floor1-7.jpg",title : "干枯草菌颗粒",price:"88.8"},
-				                                {img : "images/floor1-6.jpg",title : "干枯草菌颗粒",price:"88.8"},
+				                    bottom :   [{img : "images/floor2-6.jpg",title : "【长效伟哥】希爱力",price:"399"},
+				                               {img : "images/floor2-7.jpg",title : "【前列腺炎】前列舒通胶囊",price:"88.8"},
+				                               {img : "images/floor2-8.jpg",title : "【精分】欧兰宁",price:"102"},
+				                                {img : "images/floor2-9.jpg",title : "【牛皮癣】达力士",price:"68.9"},
+				                                {img : "images/floor2-10.jpg",title : "【肺癌】特罗凯",price:"4280"},
 				                              ]
 				                    },
 				                    {
@@ -32,11 +32,11 @@ define(['jquery','temp','carousel'],function($,temp,carousel){
 				                    ul :  ["血压计","血压计","血压计","血压计","血压计","血压计","血压计","血压计","血压计",
 				                          "血压计","血压计","血压计","血压计","血压计","血压计","血压计"],
 				                    right : ['images/floor3-4.jpg','images/floor3-5.jpg'],
-				                    bottom :   [{img : "images/floor1-10.jpg",title : "干枯草菌颗粒",price:"88.8"},
-				                               {img : "images/floor1-9.jpg",title : "干枯草菌颗粒",price:"88.8"},
-				                               {img : "images/floor1-8.jpg",title : "干枯草菌颗粒",price:"88.8"},
-				                                {img : "images/floor1-7.jpg",title : "干枯草菌颗粒",price:"88.8"},
-				                                {img : "images/floor1-6.jpg",title : "干枯草菌颗粒",price:"88.8"},
+				                    bottom :   [{img : "images/floor3-7.jpg",title : "鱼跃 上臂式家用电子血压计",price:"149.0"},
+				                               {img : "images/floor3-8.jpg",title : "欧姆龙 智能上臂式电子",price:"239.0"},
+				                               {img : "images/floor3-6.jpg",title : "强生 稳豪型血糖试纸",price:"159.0"},
+				                                {img : "images/floor3-9.jpg",title : "诺斯清 生理海水鼻腔护",price:"360.5"},
+				                                {img : "images/floor3-10.jpg",title : "鱼跃 制氧机7F-3CW | 升",price:"115.0"},
 				                              ]
 				                    },
 				                    {
@@ -44,11 +44,11 @@ define(['jquery','temp','carousel'],function($,temp,carousel){
 				                    ul :  ["日抛","月抛","季抛","半年抛","日抛","月抛","季抛","半年抛",
 				                          "日抛","月抛","季抛","半年抛","日抛","月抛","季抛","半年抛"],
 				                    right : ['images/floor4-3.jpg','images/floor4-4.jpg'],
-				                    bottom :   [{img : "images/floor1-10.jpg",title : "干枯草菌颗粒",price:"88.8"},
-				                               {img : "images/floor1-9.jpg",title : "干枯草菌颗粒",price:"88.8"},
-				                               {img : "images/floor1-8.jpg",title : "干枯草菌颗粒",price:"88.8"},
-				                                {img : "images/floor1-7.jpg",title : "干枯草菌颗粒",price:"88.8"},
-				                                {img : "images/floor1-6.jpg",title : "干枯草菌颗粒",price:"88.8"},
+				                    bottom :   [{img : "images/floor4-5.jpg",title : "博士伦 清朗水润高清日抛 30",price:"158.8"},
+				                               {img : "images/floor4-6.jpg",title : "强生 舒日日抛 30片装",price:"138.0"},
+				                               {img : "images/floor4-7.jpg",title : "库博 佰视明月抛 3片装",price:"28.0"},
+				                                {img : "images/floor4-8.jpg",title : "海昌 H2O月抛 6片装",price:"38.0"},
+				                                {img : "images/floor4-9.jpg",title : "【热销款】博士伦 润明清透2",price:"48.0"},
 				                              ]
 				                    },
 				                    {
@@ -68,47 +68,47 @@ define(['jquery','temp','carousel'],function($,temp,carousel){
 				                    ul :  ["维生素A","维生素A","维生素A","维生素A","维生素A","维生素A","维生素A","维生素A","维生素A",
 				                          "维生素A","维生素A","维生素A","维生素A","维生素A","维生素A","维生素A"],
 				                    right : ['images/floor6-4.jpg','images/floor6-5.jpg'],
-				                    bottom :   [{img : "images/floor1-10.jpg",title : "干枯草菌颗粒",price:"88.8"},
-				                               {img : "images/floor1-9.jpg",title : "干枯草菌颗粒",price:"88.8"},
-				                               {img : "images/floor1-8.jpg",title : "干枯草菌颗粒",price:"88.8"},
-				                                {img : "images/floor1-7.jpg",title : "干枯草菌颗粒",price:"88.8"},
-				                                {img : "images/floor1-6.jpg",title : "干枯草菌颗粒",price:"88.8"},
+				                    bottom :   [{img : "images/floor6-6.jpg",title : "【备孕】爱乐维 复合维生素",price:"69.0"},
+				                               {img : "images/floor6-6.jpg",title : "【备孕】爱乐维 复合维生素",price:"69.0"},
+				                               {img : "images/floor6-6.jpg",title : "【备孕】爱乐维 复合维生素",price:"69.0"},
+				                                {img : "images/floor6-6.jpg",title : "【备孕】爱乐维 复合维生素",price:"69.0"},
+				                                {img : "images/floor6-6.jpg",title : "【备孕】爱乐维 复合维生素",price:"69.0"},
 				                              ]
 				                    },
 				                    {
 				                    title : '7F医疗器械',
 				                    ul :  ["血压计","血压计","血压计","血压计","血压计","血压计","血压计","血压计","血压计",
 				                          "血压计","血压计","血压计","血压计","血压计","血压计","血压计"],
-				                    right : ['images/floor3-4.jpg','images/floor3-5.jpg'],
-				                    bottom :   [{img : "images/floor1-10.jpg",title : "干枯草菌颗粒",price:"88.8"},
-				                               {img : "images/floor1-9.jpg",title : "干枯草菌颗粒",price:"88.8"},
-				                               {img : "images/floor1-8.jpg",title : "干枯草菌颗粒",price:"88.8"},
-				                                {img : "images/floor1-7.jpg",title : "干枯草菌颗粒",price:"88.8"},
-				                                {img : "images/floor1-6.jpg",title : "干枯草菌颗粒",price:"88.8"},
+				                    right : ['images/floor7-4.jpg','images/floor7-4.jpg'],
+				                    bottom :   [{img : "images/floor7-5.jpg",title : "【4支家庭装】云南白药牙膏",price:"89"},
+				                               {img : "images/floor7-5.jpg",title : "【4支家庭装】云南白药牙膏",price:"89"},
+				                               {img : "images/floor7-5.jpg",title : "【4支家庭装】云南白药牙膏",price:"89"},
+				                                {img : "images/floor7-5.jpg",title : "【4支家庭装】云南白药牙膏",price:"89"},
+				                                {img : "images/floor7-5.jpg",title : "【4支家庭装】云南白药牙膏",price:"89"},
 				                              ]
 				                    },
 				                    {
-				                    title : '8F隐形眼镜',
-				                    ul :  ["日抛","月抛","季抛","半年抛","日抛","月抛","季抛","半年抛",
-				                          "日抛","月抛","季抛","半年抛","日抛","月抛","季抛","半年抛"],
-				                    right : ['images/floor4-3.jpg','images/floor4-4.jpg'],
-				                    bottom :   [{img : "images/floor1-10.jpg",title : "干枯草菌颗粒",price:"88.8"},
-				                               {img : "images/floor1-9.jpg",title : "干枯草菌颗粒",price:"88.8"},
-				                               {img : "images/floor1-8.jpg",title : "干枯草菌颗粒",price:"88.8"},
-				                                {img : "images/floor1-7.jpg",title : "干枯草菌颗粒",price:"88.8"},
-				                                {img : "images/floor1-6.jpg",title : "干枯草菌颗粒",price:"88.8"},
+				                    title : '8F情趣用品',
+				                    ul :  ["避孕套","避孕套","避孕套","避孕套","避孕套","避孕套","避孕套","避孕套",
+				                         "避孕套","避孕套","避孕套","避孕套","避孕套","避孕套","避孕套","避孕套"],
+				                    right : ['images/floor8-3.jpg','images/floor8-3.jpg'],
+				                    bottom :   [{img : "images/floor8-4.jpg",title : "杜蕾斯避孕套52片组合装 ",price:"69.0"},
+				                               {img : "images/floor8-4.jpg",title : "杜蕾斯避孕套52片组合装 ",price:"69.0"},
+				                               {img : "images/floor8-4.jpg",title : "杜蕾斯避孕套52片组合装 ",price:"69.0"},
+				                                {img : "images/floor8-4.jpg",title : "杜蕾斯避孕套52片组合装 ",price:"69.0"},
+				                                {img : "images/floor8-4.jpg",title : "杜蕾斯避孕套52片组合装 ",price:"69.0"},
 				                              ]
 				                    },
 				                    {
-				                    title : '9F隐形眼镜',
-				                    ul :  ["日抛","月抛","季抛","半年抛","日抛","月抛","季抛","半年抛",
-				                          "日抛","月抛","季抛","半年抛","日抛","月抛","季抛","半年抛"],
-				                    right : ['images/floor4-3.jpg','images/floor4-4.jpg'],
-				                    bottom :   [{img : "images/floor1-10.jpg",title : "干枯草菌颗粒",price:"88.8"},
-				                               {img : "images/floor1-9.jpg",title : "干枯草菌颗粒",price:"88.8"},
-				                               {img : "images/floor1-8.jpg",title : "干枯草菌颗粒",price:"88.8"},
-				                                {img : "images/floor1-7.jpg",title : "干枯草菌颗粒",price:"88.8"},
-				                                {img : "images/floor1-6.jpg",title : "干枯草菌颗粒",price:"88.8"},
+				                    title : '9F母婴用品',
+				                    ul :  ["进口奶粉","进口奶粉","进口奶粉","进口奶粉","进口奶粉","进口奶粉","进口奶粉","进口奶粉",
+				                         "进口奶粉","进口奶粉","进口奶粉","进口奶粉","进口奶粉","进口奶粉","进口奶粉","进口奶粉"],
+				                    right : ['images/floor9-3.jpg','images/floor9-3.jpg'],
+				                    bottom :   [{img : "images/floor9-4.jpg",title : "宝宝金水360ml",price:"48.0"},
+				                               {img : "images/floor9-4.jpg",title : "宝宝金水360ml",price:"48.0"},
+				                               {img : "images/floor9-4.jpg",title : "宝宝金水360ml",price:"48.0"},
+				                                {img : "images/floor9-4.jpg",title : "宝宝金水360ml",price:"48.0"},
+				                                {img : "images/floor9-4.jpg",title : "宝宝金水360ml",price:"48.0"},
 				                              ]
 				                    }
 				                ]
@@ -151,6 +151,19 @@ define(['jquery','temp','carousel'],function($,temp,carousel){
 			var list = temp.compile(str);
 			var html = list(data);
 			$('#wrap-floor').append(html);
+
+
+			//图片淡入淡出
+			$('.lunbtur').on('mouseover','img',function(){
+				$(this).css({'opacity':'.9'});
+			}).on('mouseleave','img',function(){
+				$(this).css({'opacity':'1'});
+			});
+			$('.lunbtub').on('mouseover','img',function(){
+				$(this).css({'opacity':'.6'});
+			}).on('mouseleave','img',function(){
+				$(this).css({'opacity':'1'});
+			});
 
 
 

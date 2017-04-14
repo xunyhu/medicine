@@ -1,6 +1,14 @@
 requirejs(['config'],function(){
 	requirejs(['jquery','carousel','floor'],function($,car,floor){
-		$('header').load('http://localhost:3000/medicine/html/head.html',function(){
+		$('header').load('html/head.html',function(){
+			//地区选择
+			$('header').on('click','.top-left ul span',function(){
+					$('.city').text($(this).html());
+			});
+			//分类菜单显示
+			$('header').find('.goodsfl').show();
+
+
 			$.post('api/usename.php', function(res) {
 				var $obj = eval('(' + res + ')');
 				if($obj.state) {
@@ -16,18 +24,13 @@ requirejs(['config'],function(){
 				});
 			});
 		});
-		$('footer').load('http://localhost:3000/medicine/html/foot.html');
+		$('footer').load('html/foot.html');
 		floor.init();
 
 
 
 		$(function(){
-			//地区选择
-			$('header').on('click','.top-left ul span',function(){
-					$('.city').text($(this).html());
-			});
-			//分类菜单显示
-			$('header').find('.goodsfl').show();
+			
 			//轮播图
 			$('.bannerleft').carousel({
 				imglist : ['images/banner1.jpg','images/banner2.jpg','images/banner3.jpg','images/banner4.jpg','images/banner5.jpg','images/banner6.jpg'],
@@ -146,8 +149,31 @@ requirejs(['config'],function(){
 			//console.log($b[1]);
 			$($b[1]).css({'background':'#8cd7d3'});
 			$($c[1]).css({'border-top':'1px solid #8cd7d3'});
+			$($b[2]).css({'background':'#ffa27a'});
+			$($c[2]).css({'border-top':'1px solid #ffa27a'});
+			$($b[3]).css({'background':'#ff6b6b'});
+			$($c[3]).css({'border-top':'1px solid #ff6b6b'});
+			$($b[4]).css({'background':'#f6c89e'});
+			$($c[4]).css({'border-top':'1px solid #f6c89e'});
+			$($b[5]).css({'background':'#aee177'});
+			$($c[5]).css({'border-top':'1px solid #aee177'});
+			$($b[6]).css({'background':'#ffacd0'});
+			$($c[6]).css({'border-top':'1px solid #ffacd0'});
+			$($b[7]).css({'background':'#cac3f2'});
+			$($c[7]).css({'border-top':'1px solid #cac3f2'});
+			$($b[8]).css({'background':'#fcb0c0'});
+			$($c[8]).css({'border-top':'1px solid #fcb0c0'});
 
 
+
+
+
+			//图片淡入淡出
+			$('.flashsale').on('mouseover','img',function(){
+				$(this).css({'opacity':'.9'});
+			}).on('mouseleave','img',function(){
+				$(this).css({'opacity':'1'});
+			})
 
 
 
