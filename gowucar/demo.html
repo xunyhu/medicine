@@ -1,0 +1,34 @@
+<!DOCTYPE html><html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.price::before{ content:"￥";}
+		</style>
+		
+	</head>
+	<body>
+		<p class="price">19.9</p>
+		<p class="price">39.9</p>
+		
+		<p class="jiage">￥19.9</p>
+		<p class="jiage">￥39.9</p>
+		
+		<script>
+			
+			var a = Number(document.getElementsByClassName('price')[0].innerText);
+			var b = Number(document.getElementsByClassName('price')[1].innerText);
+			console.log(a+b)
+			
+			var c = document.getElementsByClassName('jiage')[0].innerText;
+			var c1 = c.substring(1,c.length);
+			var d = document.getElementsByClassName('jiage')[1].innerText;
+			var d1 = d.substring(1,d.length);
+			console.log(c)
+			console.log(c1)
+			
+			
+		</script>
+		
+	</body>
+</html>

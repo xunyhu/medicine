@@ -1,28 +1,15 @@
 {
-  "name": "medicine",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "doc": "doc"
+  "name": "sfbest",
+  "verson": "2.1.0",
+  "author": {
+    "name": "RR",
+    "date": "02-20"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/HuRui-96/medicine.git"
-  },
-  "author": "hurui",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/HuRui-96/medicine/issues"
-  },
-  "homepage": "https://github.com/HuRui-96/medicine#readme",
   "devDependencies": {
-    "browser-sync": "^2.18.8",
-    "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^2.1.2"
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-uglify": "^2.0.1"
   }
 }

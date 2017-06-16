@@ -1,0 +1,73 @@
+@charset "UTF-8";
+body { color: #666666; font: 12px/150% Arial,Verdana,"宋体"; margin: 0; padding: 0; }
+
+body { min-width: 1200px; }
+
+h1, h2, h3, h4, h5, h6, p, a, em, font, img, strong, b, dl, dt, dd, form, label, ol, ul, li, legend, span, input { margin: 0; padding: 0; }
+
+ol, ul { list-style: none; }
+
+img { border: 0; }
+
+.fl { float: left; }
+
+.fr { float: right; }
+
+.clr { clear: both; display: block; font-size: 0; height: 0; line-height: 0; overflow: hidden; padding: 0px; margin: 0px; }
+
+.clear { clear: both; padding: 0px; font-size: 0px; margin: 0px; height: 0px; line-height: 0; overflow: hidden; display: block; }
+
+.clear1 { clear: both; height: 5px; font-size: 0px; margin: 0px; padding: 0px; line-height: 0; overflow: hidden; display: block; }
+
+.clear2 { clear: both; height: 10px; font-size: 0px; margin: 0px; padding: 0px; line-height: 0; overflow: hidden; display: block; }
+
+.hide { display: none; }
+
+em { font-style: normal; }
+
+.header { width: 1000px; margin: 0 auto; overflow: hidden; padding: 10px 0; }
+
+.header img { float: left; }
+
+.header span { line-height: 70px; font-size: 24px; padding-left: 3px; font-family: "微软雅黑"; float: left; }
+
+.enterm { width: 1000px; height: 500px; margin: auto; }
+
+.enterm .login { width: 400px; height: 450px; float: left; }
+
+.enterm .login p { height: 40px; font-size: 16px; font-family: "微软雅黑", Arial, Helvetica, sans-serif; }
+
+.enterm .login p a { display: inline-block; text-decoration: none; font-size: 12px; color: #515151; width: 70px; height: 25px; border: 1px solid #34b742; line-height: 25px; text-align: center; background: #fff4f0; }
+
+.enterm .login .denlu { width: 400px; height: 395px; border: 1px solid #cdcdcd; }
+
+.enterm .login .denlu span { display: inline-block; width: 198px; text-align: center; height: 32px; position: relative; border-top: 2px solid #69af05; font-size: 14px; line-height: 30px; cursor: pointer; }
+
+.enterm .login .denlu .sfzh { border-top: none; border-bottom: 1px solid #cdcdcd; border-left: 1px solid #cdcdcd; }
+
+.enterm .login .denlu .dd form { padding: 15px 33px; border-bottom: 1px solid #cdcdcd; }
+
+.enterm .login .denlu .dd form input { width: 320px; height: 27px; margin-bottom: 20px; }
+
+.enterm .login .denlu .dd form #scode { width: 130px; }
+
+.enterm .login .denlu .dd form #yzm {
+	display: inline-block;width: 130px;height: 27px;border: 1px solid #ccc;position: relative;top: 0;
+	line-height: 27px;margin-left: 6px;text-align: center;font-size:18px ;
+}
+
+.enterm .login .denlu .dd form .wjma a { display: inline-block; text-align: right; width: 320px; }
+
+.enterm .login .denlu .dd form #logindex a { text-align: center; display: inline-block; width: 320px; height: 41px; background: #6aaf06; color: white; line-height: 41px; font-size: 18px; cursor: pointer; }
+
+.enterm .login .denlu .hz ul li { padding-left: 33px; padding-top: 5px; }
+
+.loginfoot { width: 1000px; margin: auto; overflow: hidden; padding-top: 20px; }
+
+.loginfoot span { display: block; width: 1000px; text-align: center; height: 26px; }
+
+.loginfoot span a { display: inline-block; padding: 0 10px; }
+
+.loginfoot p { height: 26px; line-height: 26px; text-align: center; }
+
+

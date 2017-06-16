@@ -1,0 +1,95 @@
+*{margin: 0;padding: 0;}
+body {height: 2000px;}
+/*优选必买样式*/
+.wrap-msbuy {
+	width: 100%;overflow: hidden;padding-top: 35px;background: url(../img/thefifthyear.png) no-repeat center top;z-index: -99;
+}
+.wrap-msbuy .msbuy {
+	width: 1190px;margin: auto;overflow: hidden;padding-left: 10px;
+}
+.msbuyl,.msbuyr {float: left;margin-top: 10px;}
+.msbuyl {
+	border: 1px solid #ccc;width: 944px;margin-right: 20px;overflow: hidden;border-bottom: none;
+}
+.msbuyl ul{overflow: hidden;list-style: none;}
+.msbuyl ul li {float: left;border-right:1px solid #ccc;border-bottom: 1px solid #ccc;position: relative;}
+.msbuyl ul li h4 {position: absolute;top: 48px;left: 18px;color: #FF4700;font: 16px;}
+.msbuyl ul li a {position: absolute;bottom: 15px;left:50%;margin-left: -80px; display: block;width: 160px;height: 24px;
+				 border-radius:2px;background:#76ac25;opacity:0.95;text-align: center;
+				color: white;font-size: 12px;line-height: 24px;display: none;
+}
+.msbuyl ul li:hover a {display: block;cursor: pointer;}
+.msbuyl ul .mlast {border-bottom: 1px solid #ccc;border-right: none;}
+.msbuyr {
+	border: 1px solid #ccc;width: 220px;overflow: hidden;
+}
+.msbuyr dd {padding: 10px;}
+.msbuyr h4 {height: 38px;line-height: 38px;border-bottom: 1px dashed #ccc;}
+.msbuyr p {height: 26px;line-height: 26px;font-size: 12px;}
+.msbuyr .msr {color: #fa6400;}
+
+/*飞入购物车*/
+.u-flyer{display: block;width: 50px;height: 50px;position: fixed;z-index: 9999;}
+
+/*右侧小图标*/
+.sidenav {position:fixed;bottom:20px;left:50%;margin-left:610px;z-index:999;width:44px;height:250px;}
+.sidenav li {display: block;width: 42px;height: 42px;margin-bottom: 10px;}
+.sidenav .cart {background: url(../img/productList.png) no-repeat 0 -47px;position: relative;}
+.sidenav .cart:hover {background: url(../img/productList.png) no-repeat 0 -149px;}
+.sidenav .cart #msg {
+	position: absolute;display: block;right: -9px;top: -5px;width: 34px;height: 18px;line-height: 18px;
+	text-align: center;color: white;border-radius: 10px;background: #FA9600;
+	text-decoration: none;font-size: 12px;display: none;
+}
+.sidenav .cart .msglist {
+	position: relative;left: -370px;padding: 10px;width: 340px;background: #ccc;display: none;
+}
+.sidenav .zuji {background: url(../img/productList.png) no-repeat -42px -82px;}
+.sidenav .zuji:hover{background: url(../img/productList.png) no-repeat -42px -182px;}
+.sidenav .erwm{background: url(../img/productList.png) no-repeat -42px -40px}
+.sidenav .erwm:hover{background: url(../img/productList.png) no-repeat -42px -142px}
+.sidenav .huij{background: url(../img/productList.png) no-repeat 0 -82px;}
+.sidenav .huij:hover {background: url(../img/productList.png) no-repeat 0 -184px;}
+
+
+/*限时抢购*/
+.wrap-snap {width: 100%;overflow: hidden;}
+.snap {width: 1190px;margin:20px auto;overflow: hidden;padding-left: 10px;}
+.snapl,.snapr {float: left;overflow: hidden;}
+.snapl dl {border-bottom: 1px solid #e5e5e5 ;float: left;padding: 13px 0 18px 19px;}
+.snapl dl dt {border: 1px solid #eee;width: 164px;height: 164px;position: relative;}
+.snapl dl dt span {
+	display: block;position: absolute;width: 32px;height: 32px;top: 0;left: 15px;
+	background: url(../img/img2.2.png) no-repeat 0 -136px;
+}
+.snapl dl img {width: 164px;height: 164px;}
+.snapl dl dd p {line-height: 18px;color: #323232;font-size: 12px;width: 166px;height: 18px;overflow: hidden;}
+.snapl .dlo {border-left: 1px solid #e5e5e5 ;}
+.snapl .dll {padding-right: 18px;border-right: 1px solid #e5e5e5 ;}
+.snapl .snapnow {color: white;background:#FA6400;text-align: center;line-height: 28px;height: 28px;}
+.snapl .snapnow:hover {cursor: pointer;}
+.snapl .price {font-size: 14px;color: #FF4700;margin-bottom: 25px;}
+.snapl .price span {float: right;color: #bcbcbc;text-decoration: line-through;}
+.countdwon {background: #FA6400;width: 924px;height: 60px;line-height:60px;color: #fff;padding-left: 20px;position: relative;}
+.countdwon p {float: left;font-family: Microsoft YaHei;font-size: 26px;}
+.countdwon .cone {position: relative;margin-left:15px;text-indent: 40px;margin-right:40px}
+.countdwon .cone span {
+	display: block;position: absolute;left: 0;top: 14px;width: 32px;height: 35px;
+	background: url(../img/img2.2.png) no-repeat -40px -266px;
+}
+.countdwon ul {list-style: none;position: absolute;top: 12px;left: 230px;}
+.countdwon ul li {float: left;width: 38px;height: 40px;line-height: 40px;font-size:12px;text-align: center;}
+.countdwon ul .clockbg {
+	background: url(../img/img2.2.png) no-repeat -185px -216px;
+	margin-right:2px;text-align: center;font-size: 25px;
+}
+.countdwon .clast {float: right;font-size: 20px;padding-right: 25px;}
+.snapr {margin-left: 20px;}
+
+
+
+
+
+
+
+

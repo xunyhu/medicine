@@ -1,0 +1,79 @@
+@charset "UTF-8";
+body { color: #666666; font: 12px/150% Arial,Verdana,"宋体"; margin: 0; padding: 0; }
+
+body { min-width: 1200px; }
+
+h1, h2, h3, h4, h5, h6, p, a, em, font, img, strong, b, dl, dt, dd, form, label, ol, ul, li, legend, span, input { margin: 0; padding: 0; }
+
+ol, ul { list-style: none; }
+
+img { border: 0; }
+
+.fl { float: left; }
+
+.fr { float: right; }
+
+.clr { clear: both; display: block; font-size: 0; height: 0; line-height: 0; overflow: hidden; padding: 0px; margin: 0px; }
+
+.clear { clear: both; padding: 0px; font-size: 0px; margin: 0px; height: 0px; line-height: 0; overflow: hidden; display: block; }
+
+.clear1 { clear: both; height: 5px; font-size: 0px; margin: 0px; padding: 0px; line-height: 0; overflow: hidden; display: block; }
+
+.clear2 { clear: both; height: 10px; font-size: 0px; margin: 0px; padding: 0px; line-height: 0; overflow: hidden; display: block; }
+
+.hide { display: none; }
+
+em { font-style: normal; }
+
+html { background: #f5f5f5 none repeat scroll 0 0; color: #515151; overflow-y: scroll; }
+
+.header { width: 1000px; margin: 0 auto; overflow: hidden; padding: 10px 0; }
+
+.header img { float: left; }
+
+.header span { line-height: 70px; font-size: 24px; padding-left: 3px; font-family: "微软雅黑"; float: left; }
+
+.tabBox { width: 666px; margin: 0 auto; padding-left: 333px; height: 37px; font-size: 14px; color: black; border-bottom: 1px solid #d5d5d5; }
+
+.tabBox span { display: inline-block; height: 30px; width: 158px; border: 1px solid #d5d5d5; border-bottom: none; line-height: 30px; text-align: center; background-color: #ececec; margin: 7px 6px 0 0; }
+
+.tabBox p { font-size: 12px; height: 33px; line-height: 33px; margin: 4px 10px 0 0; }
+
+.tabBox p a { color: #6e9b0c; text-decoration: none; }
+
+.personal { width: 960px; margin: 0 auto; padding: 45px 0 0 40px; overflow: hidden; background-color: white; }
+
+.personal form { width: 960px; height: 434px; background: url(../images/pic2.jpg) no-repeat right 58px; }
+
+.personal form input { width: 228px; height: 36px; line-height: 36px; margin-bottom: 24px; }
+
+.personal form span { color: #ff4800; display: inline-block; padding: 0 10px; }
+
+.personal form label { display: inline-block; width: 118px; font-size: 14px; color: #515151; height: 38px; line-height: 38px; text-align: right; }
+
+.personal form .more { color: #669900; padding: 15px 10px 10px 45px; border-top: 1px dotted #dcdcdc; position: relative; left: -30px; width: 930px; background: url(../images/reg_tip.png) no-repeat 25px 16px; }
+
+.personal form #agreed { width: 12px; height: 12px; margin: 0; }
+
+.personal form .regword { margin: 0; }
+
+.personal form #mmqd { color: black; display: block; margin-left: 180px; margin-top: 5px; color: #969696; }
+
+.personal form #mmqd a { display: inline-block; width: 34px; text-align: center; color: white; background: #ccc; margin-right: 3px; }
+
+.personal #Login { display: block; margin: 20px 0 25px 105px; width: 271px; height: 38px; line-height: 38px; color: white; font-size: 16px; text-align: center; background: #669900; border: none; }
+
+.loginfoot { width: 1000px; margin: auto; overflow: hidden; padding-top: 20px; }
+
+.loginfoot span { display: block; width: 1000px; text-align: center; height: 26px; }
+
+.loginfoot span a { display: inline-block; padding: 0 10px; }
+
+.loginfoot p { height: 26px; line-height: 26px; text-align: center; }
+
+.personal .regvrify {width:80px}
+
+.personal form .siwei {
+	display: inline-block;width: 100px;height: 36px;margin-left: 6px;line-height: 36px;font-size: 18px;
+	border: 1px solid #ccc;text-align: center;margin-right: 6px;
+}

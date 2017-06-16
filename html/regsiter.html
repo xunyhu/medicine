@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册页</title>
+		<link rel="stylesheet" href="../css/login.css" />
+		<link rel="shortcut  icon" type="image/x-icon" href="../images/logo-2.ico" media="screen" />
+		<script type="text/javascript" src="../assets/jquery-3.1.1.js" ></script>
+		<script type="text/javascript" src="../js/regsiter.js"></script>
+		
+	</head>
+	<body>
+		<div class="header">
+			<a href="../index.html"><img src="../images/logo.png" /></a>
+			<span>欢迎注册</span>
+		</div>
+		<div class="tabBox">
+			<span>个人用户</span>
+			<span>企业用户</span>
+			<p class="fr tabBoxr">已有账号，立即  <a href="login.html">登入</a></p>
+		</div>
+		<div class="personal" >
+			<form>
+				<label><span>&lowast;</span>账户名：</label>
+				<input type="text" id="username" class="regname" /><span></span><br />
+				
+				<label><span>&lowast;</span>登入密码：</label>
+				<input type="password" id="password" class="regword" /><span></span><br />
+				<p id="mmqd">安全强度：<a>弱</a><a>中</a><a>强</a></p><br />
+				
+				<label><span>&lowast;</span>确认密码：</label>
+				<input type="password" id="confirm" class="regconfirm" /><span></span><br />
+				
+				<label><span>&lowast;</span>验证码：</label>
+				<input type="text" id="vrify" class="regvrify" /><span class="siwei"></span><a id="hyh" style="color: #669900;cursor: pointer;">看不清？换一换</a><br />
+				<span style="margin-left: 105px;color: black;">
+					<input id="agreed" type="checkbox" checked="checked" />
+					我已阅读并同意<a style="color: #669900;">《顺丰优选用户注册协议》</a>
+				</span><br />
+				<button id="Login">立即注册</button>
+				<p class="more"><a>了解更多>></a></p>
+			</form>
+		</div>
+		<div class="business" style="display:none;">
+			维护中暂停注册
+		</div>
+		<div class="loginfoot">
+			<span><a>关于我们</a>|<a>联系我们</a>|<a>招聘人才</a>|<a>友情链接</a>|<a>供应商申请</a></span>
+			<p>北京顺丰电子商务有限公司</p>
+			<p>北京市公安局顺义分局备案11011302000890号|京ICP备12011349号|企业营业执照</p>
+			<p>Copyright© 顺丰优选 sfbest.com 版权所有</p>
+		</div>
+	</body>
+	
+</html>
