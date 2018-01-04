@@ -23,7 +23,7 @@ function createXHR() {
  async: true
  }
  */
-//封装的ajax函数
+//封装ajax函数
 //obj: 是包含了请求方法, url, 是否是异步,...
 function ajax(obj){
 
@@ -33,64 +33,49 @@ function ajax(obj){
     //2, open()
     //把参数对象: {regname:lisi, age: 33} 转换成参数字符串: regname=lisi&age=33
     obj.data = params(obj.data);
-
-    //如果是get请求方式, 则把参数添加到url后面
     if (/get/i.test(obj.method)) {
-        //obj.data.length > 0说明有参数
         obj.url += obj.data.length > 0 ? ("?"+obj.data) : "";
     }
-    //调用open()方法
     xhr.open(obj.method, obj.url, obj.async);
 
     //3, send()
-    if (/get/i.test(obj.method)) { //get请求方式
+    if (/get/i.test(obj.method)) { 
         xhr.send(null);
     }
-    else {  //post请求方式
+    else { 
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xhr.send(obj.data);
     }
 
     //4, onreadystatechange
-    if (obj.async) { //异步
+    if (obj.async) { 
         xhr.onreadystatechange = function() {
             if (xhr.readyState == 4) {
                 callback();
             }
         }
     }
-    else { //同步
+    else {
         callback();
     }
 
-    //回调
     function callback() {
-        if (xhr.status == 200) { //请求成功
-            //console.log("请求成功!");
-
-            //回调success函数
+        if (xhr.status == 200) { 
             obj.success(xhr.responseText);
         }
-        else { //请求失败
-            //console.log("请求失败!");
-
-            //回调failure函数
+        else { /
             obj.failure(xhr.status);
         }
     }
 
 }
 
-/*
- 把参数对象: {regname:lisi, age: 33} 转换成参数字符串: regname=lisi&age=33
- * */
 function params(dataObj) {
     var arr = [];
     for (var i in dataObj) {
         var str = i + "=" + dataObj[i]; //regname=lisi
         arr.push(str);
     }
-    //arr = [regname=lisi, age=33]
     return arr.join("&");
 }
 
